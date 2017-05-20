@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="github" fetch="ssh://git@github.com/" />
+
+  <remove-project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
+  <remove-project path="developers/build" name="platform/developers/build" />
+  <remove-project path="developers/demos" name="platform/developers/demos" />
+  <remove-project path="developers/samples/android" name="platform/developers/samples/android" />
+  <remove-project path="device/asus/fugu" name="device/asus/fugu" groups="device,fugu,broadcom_pdk" />
+  <remove-project path="device/asus/fugu-kernel" name="device/asus/fugu-kernel" groups="device,fugu,broadcom_pdk" clone-depth="1" />
+  <remove-project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
+  <remove-project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
+  <remove-project path="device/generic/common" name="device/generic/common" groups="pdk" />
+  <remove-project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
+  <remove-project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
+  <remove-project path="device/generic/mips" name="device/generic/mips" groups="pdk" />
+  <remove-project path="device/generic/mips64" name="device/generic/mips64" groups="pdk" />
+  <remove-project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" />
+  <remove-project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
+  <remove-project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk" />
+  <remove-project path="device/generic/mini-emulator-mips64" name="device/generic/mini-emulator-mips64" groups="pdk" />
+  <remove-project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" />
+  <remove-project path="device/generic/mini-emulator-x86_64" name="device/generic/mini-emulator-x86_64" groups="pdk" />
+  <remove-project path="device/generic/qemu" name="device/generic/qemu" />
+  <remove-project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
+  <remove-project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
+  <remove-project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
+  <remove-project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
+  <remove-project path="device/google/atv" name="device/google/atv" groups="device,fugu,broadcom_pdk,generic_fs" />
+  <remove-project path="device/google/dragon" name="device/google/dragon" groups="device,dragon" />
+  <remove-project path="device/google/contexthub" name="device/google/contexthub" groups="device" />
+  <remove-project path="device/google/dragon-kernel" name="device/google/dragon-kernel" groups="device,dragon" clone-depth="1" />
+  <remove-project path="device/google/marlin" name="device/google/marlin" groups="device,marlin" />
+  <remove-project path="device/google/marlin-kernel" name="device/google/marlin-kernel" groups="device,marlin" clone-depth="1" />
+  <remove-project path="device/htc/flounder" name="device/htc/flounder" groups="device,flounder,broadcom_pdk" />
+  <remove-project path="device/htc/flounder-kernel" name="device/htc/flounder-kernel" groups="device,flounder,broadcom_pdk" clone-depth="1" />
+  <remove-project path="device/huawei/angler" name="device/huawei/angler" groups="device,angler,broadcom_pdk" />
+  <remove-project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
+  <remove-project path="device/intel/edison" name="device/intel/edison" groups="device" />
+  <remove-project path="device/lge/bullhead" name="device/lge/bullhead" groups="device,bullhead" />
+  <remove-project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" />
+  <remove-project path="device/linaro/hikey" name="device/linaro/hikey" />
+  <remove-project path="device/linaro/hikey-kernel" name="device/linaro/hikey-kernel" />
+  <remove-project path="device/moto/shamu" name="device/moto/shamu" groups="device,shamu,broadcom_pdk" />
+  <remove-project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
+  <remove-project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
+  <remove-project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
+  <remove-project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
+  <remove-project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" />
+  <remove-project path="hardware/intel/common/libmix" name="platform/hardware/intel/common/libmix" groups="intel" />
+  <remove-project path="hardware/intel/common/libstagefrighthw" name="platform/hardware/intel/common/libstagefrighthw" groups="intel" />
+  <remove-project path="hardware/intel/common/libva" name="platform/hardware/intel/common/libva" groups="intel" />
+  <remove-project path="hardware/intel/common/libwsbm" name="platform/hardware/intel/common/libwsbm" groups="intel" />
+  <remove-project path="hardware/intel/common/omx-components" name="platform/hardware/intel/common/omx-components" groups="intel" />
+  <remove-project path="hardware/intel/common/utils" name="platform/hardware/intel/common/utils" groups="intel" />
+  <remove-project path="hardware/intel/common/wrs_omxil_core" name="platform/hardware/intel/common/wrs_omxil_core" groups="intel" />
+  <remove-project path="hardware/intel/img/hwcomposer" name="platform/hardware/intel/img/hwcomposer" groups="intel" />
+  <remove-project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" />
+  <remove-project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
+  <remove-project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors" />
+  <remove-project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
+  <remove-project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk" />
+  <remove-project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom,pdk" />
+  <remove-project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="pdk,qcom,qcom_display" />
+  <remove-project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps,pdk" />
+  <remove-project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster,pdk" />
+  <remove-project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom,pdk" />
+  <remove-project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960,pdk" />
+  <remove-project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" groups="qcom_msm8994,pdk" />
+  <remove-project path="hardware/qcom/msm8996" name="platform/hardware/qcom/msm8996" groups="qcom_msm8996" />
+  <remove-project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" groups="qcom_msm8x26,pdk" />
+  <remove-project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" groups="qcom_msm8x27,pdk" />
+  <remove-project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84,pdk" />
+  <remove-project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom,pdk" />
+  <remove-project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan,pdk" />
+  <remove-project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3,pdk" />
+  <remove-project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah,pdk" />
+  <remove-project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4,pdk" />
+  <remove-project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs" />
+<!--
+  <remove-project path="packages/services/BuiltInPrintService" name="platform/packages/services/BuiltInPrintService" groups="pdk-fs" />
+-->
+  <remove-project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1" />
+  <remove-project path="prebuilts/clang/host/darwin-x86" name="platform/prebuilts/clang/host/darwin-x86" groups="pdk,darwin" clone-depth="1" />
+  <remove-project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" groups="pdk" clone-depth="1" />
+  <remove-project path="prebuilts/eclipse-build-deps" name="platform/prebuilts/eclipse-build-deps" groups="notdefault,eclipse" clone-depth="1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,darwin,arm" clone-depth="1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" groups="pdk,darwin,arm" clone-depth="1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" groups="pdk,darwin" clone-depth="1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" groups="pdk,darwin,mips" clone-depth="1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" groups="pdk,darwin,x86" clone-depth="1" />
+  <remove-project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" />
+  <remove-project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" groups="pdk-fs" clone-depth="1" />
+  <remove-project path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" groups="pdk,linux,mips" clone-depth="1" />
+  <remove-project path="prebuilts/gdb/darwin-x86" name="platform/prebuilts/gdb/darwin-x86" groups="darwin" clone-depth="1" />
+  <remove-project path="prebuilts/go/darwin-x86" name="platform/prebuilts/go/darwin-x86" groups="darwin,tradefed" clone-depth="1" />
+  <remove-project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
+
+<!-- Pain starts here -->
+<!-- Base on beloved Schischu's device, kernel and vendor files for klimt&chagall -->
+  <project path="device/samsung/chagall-klimt-common" name="scubajeff/android_device_samsung_chagall_klimt_common" remote="github" revision="nougat-build" groups="device,chagall_klimt,broadcom_pdk" />
+  <project path="device/samsung/chagallwifi" name="Schischu/android_device_samsung_chagallwifi" remote="github" revision="aosp-7.0" groups="device,chagallwifi,broadcom_pdk" />
+  <project path="device/samsung/chagalllte" name="Schischu/android_device_samsung_chagalllte" remote="github" revision="aosp-7.0" groups="device,chagalllte,broadcom_pdk" />
+  <project path="device/samsung/klimtwifi" name="Schischu/android_device_samsung_klimtwifi" remote="github" revision="aosp-7.0" groups="device,klimtwifi,broadcom_pdk" />
+  <project path="device/samsung/klimtlte" name="scubajeff/android_device_samsung_klimtlte" remote="github" revision="nougat-build" groups="device,klimtlte,broadcom_pdk" />
+  <project path="kernel/samsung/chagalllte" name="Schischu/android_kernel_samsung_chagalllte" remote="github" revision="cm-12.1" groups="kernel,chagall_klimt" />
+  <project path="vendor/samsung/chagall-klimt-common" name="Schischu/android_vendor_samsung_chagall_klimt_common" remote="github" revision="nougat-release" />
+  <project path="vendor/samsung/chagall-common" name="Schischu/android_vendor_samsung_chagall_common" remote="github" revision="nougat-release" />
+  <project path="vendor/samsung/chagallwifi" name="Schischu/android_vendor_samsung_chagallwifi" remote="github" revision="nougat-release" />
+  <project path="vendor/samsung/chagalllte" name="Schischu/android_vendor_samsung_chagalllte" remote="github" revision="nougat-release" />
+  <project path="vendor/samsung/klimt-common" name="Schischu/android_vendor_samsung_klimt_common" remote="github" revision="nougat-release" />
+  <project path="vendor/samsung/klimtwifi" name="Schischu/android_vendor_samsung_klimtwifi" remote="github" revision="nougat-release" />
+  <project path="vendor/samsung/klimtlte" name="Schischu/android_vendor_samsung_klimtlte" remote="github" revision="nougat-release" />
+  <project path="vendor/google" name="Schischu/android_vendor_google" remote="github" revision="aosp-7.0" />
+
+<!-- LineageOS's fuse stuffs -->
+  <remove-project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
+  <project path="external/e2fsprogs" name="LineageOS/android_external_e2fsprogs" remote="github" revision="cm-14.1" groups="pdk" />
+  <project path="external/exfat" name="LineageOS/android_external_exfat" remote="github" revision="cm-14.1" groups="pdk" />
+  <project path="external/fuse" name="LineageOS/android_external_fuse" remote="github" revision="cm-14.1" groups="pdk" />
+  <project path="external/ntfs-3g" name="LineageOS/android_external_ntfs-3g" remote="github" revision="cm-14.1" groups="pdk" />
+  <project path="external/stlport" name="LineageOS/android_external_stlport" remote="github"  revision="cm-14.1" groups="pdk"/>
+
+<!-- samsung exynos stuffs, my modifications
+  <project path="hardware/samsung" name="scubajeff/android_hardware_samsung" remote="github" revision="nougat-build" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos" name="scubajeff/android_hardware_samsung_slsi_exynos" remote="github" revision="cm-14.1" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos5-insignal" name="scubajeff/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="cm-12.1" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos5420" name="scubajeff/android_hardware_samsung_slsi_exynos5420" remote="github" revision="android-7.1.1_r4" groups="pdk" />
+  <project path="hardware/samsung_slsi/openmax" name="scubajeff/android_hardware_samsung_slsi_openmax" remote="github" revision="cm-14.1" groups="pdk" />
+-->
+<!-- LineageOS's modifications -->
+  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github"  revision="cm-14.1" groups="pdk,exynos"/>
+  <project path="hardware/samsung_slsi/exynos" name="LineageOS/android_hardware_samsung_slsi-cm_exynos" remote="github"  revision="cm-14.1" groups="pdk,exynos"/>
+  <project path="hardware/samsung_slsi/exynos5" name="LineageOS/android_hardware_samsung_slsi-cm_exynos5" remote="github" revision="cm-14.1" groups="pdk,exynos"/>
+  <project path="hardware/samsung_slsi/exynos5420" name="LineageOS/android_hardware_samsung_slsi-cm_exynos5420" remote="github"  revision="cm-14.1" groups="pdk,exynos"/>
+  <project path="hardware/samsung_slsi/openmax" name="LineageOS/android_hardware_samsung_slsi-cm_openmax" remote="github"  revision="cm-14.1" groups="pdk,exynos"/>
+<!-- Schischu's modifications
+  <project path="hardware/samsung" name="Schischu/android_hardware_samsung" remote="github" revision="nougat-release" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos" name="Schischu/android_hardware_samsung_slsi_exynos" remote="github" revision="nougat-release" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos5-insignal" name="Schischu/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="nougat-release" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos5420" name="Schischu/android_hardware_samsung_slsi_exynos5420" remote="github" revision="nougat-release" groups="pdk" />
+  <project path="hardware/samsung_slsi/openmax" name="Schischu/android_hardware_samsung_slsi_openmax" remote="github" revision="nougat-release" groups="pdk" />
+-->
+<!-- deadman's modifications
+  <project name="exynos5420/android_hardware_samsung_slsi-cm_exynos5" path="hardware/samsung_slsi/exynos5" remote="github" revision="cm-14.1" groups="pdk"/>
+  <project name="exynos5420/android_hardware_samsung_slsi-cm_exynos5420" path="hardware/samsung_slsi/exynos5420" remote="github"  revision="cm-14.1" groups="pdk"/>
+  <project name="scubajeff/android_hardware_samsung" path="hardware/samsung" remote="github"  revision="nougat-build" groups="pdk"/>
+  <project name="LineageOS/android_hardware_samsung_slsi-cm_exynos" path="hardware/samsung_slsi/exynos" remote="github"  revision="cm-14.1" groups="pdk"/>
+  <project name="LineageOS/android_hardware_samsung_slsi-cm_openmax" path="hardware/samsung_slsi/openmax" remote="github"  revision="cm-14.1" groups="pdk"/>
+-->
+
+
+<!-- frameworks modifications -->
+  <remove-project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
+  <project path="frameworks/av" name="scubajeff/aosp_frameworks_av" remote="github" revision="nougat-build" groups="pdk" />
+  <remove-project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/base" name="scubajeff/aosp_frameworks_base" remote="github" revision="nougat-build" groups="pdk-cw-fs,pdk-fs" />
+  <remove-project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
+  <project path="frameworks/native" name="scubajeff/aosp_frameworks_native" remote="github" revision="nougat-build" groups="pdk"  />
+  <remove-project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="scubajeff/aosp_frameworks_opt_telephony" remote="github" revision="nougat-build" groups="pdk" />
+
+<!-- system and other stuffs -->
+<!-- Do we still need this?
+  <remove-project path="system/vold" name="platform/system/vold" groups="pdk" />
+  <project path="system/vold" name="scubajeff/android_system_vold" remote="github" revision="android-7.1.1_r4" groups="pdk" />
+-->
+  <remove-project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
+  <project path="hardware/ril" name="scubajeff/aosp_hardware_ril" remote="github" revision="nougat-build" groups="pdk" />
+  <remove-project path="system/core" name="platform/system/core" groups="pdk" />
+  <project path="system/core" name="scubajeff/aosp_system_core" remote="github" revision="nougat-build" groups="pdk" />
+  <remove-project path="system/extras" name="platform/system/extras" groups="pdk" />
+  <project path="system/extras" name="scubajeff/aosp_system_extras" remote="github" revision="nougat-build" groups="pdk" />
+  <remove-project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" />
+  <project path="system/sepolicy" name="scubajeff/aosp_system_sepolicy" remote="github" revision="nougat-build" groups="pdk" />
+
+  <remove-project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
+  <project path="bootable/recovery" name="scubajeff/aosp_bootable_recovery" remote="github" revision="nougat-build" groups="pdk" />
+  <remove-project path="external/boringssl" name="platform/external/boringssl" groups="pdk" />
+  <project path="external/boringssl" name="scubajeff/aosp_external_boringssl" remote="github" revision="nougat-build" groups="pdk" />
+  <remove-project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
+  <project path="hardware/broadcom/libbt" name="scubajeff/aosp_hardware_broadcom_libbt" remote="github" revision="nougat-build" groups="pdk" />
+  <remove-project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
+  <project path="hardware/libhardware" name="scubajeff/aosp_hardware_libhardware" remote="github" revision="nougat-build" groups="pdk" />
+
+<!-- Settings app -->
+  <remove-project path="packages/apps/Settings" name="platform/packages/apps/Settings" groups="pdk-fs" />
+  <project path="packages/apps/Settings" name="scubajeff/aosp_packages_apps_Settings" remote="github" revision="nougat-build" groups="pdk-fs" />
+
+<!--
+  <project path="packages/apps/OpenDelta" name="Schischu/android_packages_apps_OpenDelta" remote="github" revision="android-6.0" groups="pdk-fs" />
+-->
+
+<!-- Build scripts -->
+  <remove-project path="build" name="platform/build" groups="pdk,tradefed" />
+  <project path="build" name="scubajeff/aosp_build" remote="github" revision="nougat-build" groups="pdk,tradefed" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <copyfile src="build.sh" dest="build.sh" />
+  </project>
+
+<!-- trash
+  <remove-project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
+  <project path="frameworks/opt/net/wifi" name="scubajeff/android_frameworks_opt_net_wifi" remote="github" groups="pdk" />
+-->
+
+</manifest>
