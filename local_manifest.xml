@@ -96,6 +96,10 @@
     <remove-project path="prebuilts/go/darwin-x86" name="platform/prebuilts/go/darwin-x86" groups="darwin,tradefed" clone-depth="1" />
     <remove-project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
 
+    <!-- Use LineagOS's bionic -->
+    <remove-project path="bionic" name="platform/bionic" groups="pdk" />
+    <project path="bionic" name="LineageOS/android_bionic" remote="github" revision="cm-14.1" groups="pdk" />
+
     <!-- Pain starts here -->
     <!-- Base on beloved Schischu's device, kernel and vendor files for klimt&chagall -->
     <project path="device/samsung/chagall-klimt-common" name="scubajeff/android_device_samsung_chagall_klimt_common" remote="github" revision="nougat-build" groups="device,chagall_klimt,broadcom_pdk" />
@@ -104,13 +108,14 @@
     <project path="device/samsung/klimtwifi" name="Schischu/android_device_samsung_klimtwifi" remote="github" revision="aosp-7.0" groups="device,klimtwifi,broadcom_pdk" />
     <project path="device/samsung/klimtlte" name="scubajeff/android_device_samsung_klimtlte" remote="github" revision="nougat-build" groups="device,klimtlte,broadcom_pdk" />
     <project path="kernel/samsung/chagalllte" name="Schischu/android_kernel_samsung_chagalllte" remote="github" revision="cm-12.1" groups="kernel,chagall_klimt" />
-    <project path="vendor/samsung/chagall-klimt-common" name="Schischu/android_vendor_samsung_chagall_klimt_common" remote="github" revision="nougat-release" />
+    <project path="kernel/samsung/klimtlte" name="LineageOS/android_kernel_samsung_exynos5420" remote="github" revision="cm-14.1" groups="kernel,chagall_klimt" />
+    <project path="vendor/samsung/chagall-klimt-common" name="scubajeff/android_vendor_samsung_chagall_klimt_common" remote="github" revision="nougat-build" />
     <project path="vendor/samsung/chagall-common" name="Schischu/android_vendor_samsung_chagall_common" remote="github" revision="nougat-release" />
     <project path="vendor/samsung/chagallwifi" name="Schischu/android_vendor_samsung_chagallwifi" remote="github" revision="nougat-release" />
     <project path="vendor/samsung/chagalllte" name="Schischu/android_vendor_samsung_chagalllte" remote="github" revision="nougat-release" />
     <project path="vendor/samsung/klimt-common" name="Schischu/android_vendor_samsung_klimt_common" remote="github" revision="nougat-release" />
     <project path="vendor/samsung/klimtwifi" name="Schischu/android_vendor_samsung_klimtwifi" remote="github" revision="nougat-release" />
-    <project path="vendor/samsung/klimtlte" name="Schischu/android_vendor_samsung_klimtlte" remote="github" revision="nougat-release" />
+    <project path="vendor/samsung/klimtlte" name="scubajeff/android_vendor_samsung_klimtlte" remote="github" revision="nougat-build" />
     <project path="vendor/google" name="Schischu/android_vendor_google" remote="github" revision="aosp-7.0" />
 
     <!-- LineageOS's fuse stuffs -->
@@ -119,39 +124,22 @@
     <project path="external/exfat" name="LineageOS/android_external_exfat" remote="github" revision="cm-14.1" groups="pdk" />
     <project path="external/fuse" name="LineageOS/android_external_fuse" remote="github" revision="cm-14.1" groups="pdk" />
     <project path="external/ntfs-3g" name="LineageOS/android_external_ntfs-3g" remote="github" revision="cm-14.1" groups="pdk" />
-    <project path="external/stlport" name="LineageOS/android_external_stlport" remote="github"  revision="cm-14.1" groups="pdk"/>
+    <project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="cm-14.1" groups="pdk" />
 
-    <!-- samsung exynos stuffs, my modifications
-    <project path="hardware/samsung" name="scubajeff/android_hardware_samsung" remote="github" revision="nougat-build" groups="pdk" />
-    <project path="hardware/samsung_slsi/exynos" name="scubajeff/android_hardware_samsung_slsi_exynos" remote="github" revision="cm-14.1" groups="pdk" />
-    <project path="hardware/samsung_slsi/exynos5-insignal" name="scubajeff/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="cm-12.1" groups="pdk" />
-    <project path="hardware/samsung_slsi/exynos5420" name="scubajeff/android_hardware_samsung_slsi_exynos5420" remote="github" revision="android-7.1.1_r4" groups="pdk" />
-    <project path="hardware/samsung_slsi/openmax" name="scubajeff/android_hardware_samsung_slsi_openmax" remote="github" revision="cm-14.1" groups="pdk" />
-    -->
-    <!-- LineageOS's modifications -->
+    <!-- LineageOS's stagefright plugins for ffmpeg decoder -->
+    <project path="external/stagefright-plugins" name="LineageOS/android_external_stagefright-plugins" remote="github" revision="cm-14.1" groups="pdk" />
+    <project path="external/ffmpeg" name="LineageOS/android_external_ffmpeg" remote="github" revision="cm-14.1" groups="pdk" />
+
+    <!-- LineageOS's exynos5420 stuffs -->
     <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github"  revision="cm-14.1" groups="pdk,exynos"/>
-    <project path="hardware/samsung_slsi/exynos" name="LineageOS/android_hardware_samsung_slsi-cm_exynos" remote="github"  revision="cm-14.1" groups="pdk,exynos"/>
-    <project path="hardware/samsung_slsi/exynos5" name="LineageOS/android_hardware_samsung_slsi-cm_exynos5" remote="github" revision="cm-14.1" groups="pdk,exynos"/>
-    <project path="hardware/samsung_slsi/exynos5420" name="LineageOS/android_hardware_samsung_slsi-cm_exynos5420" remote="github"  revision="cm-14.1" groups="pdk,exynos"/>
-    <project path="hardware/samsung_slsi/openmax" name="LineageOS/android_hardware_samsung_slsi-cm_openmax" remote="github"  revision="cm-14.1" groups="pdk,exynos"/>
-    <!-- Schischu's modifications
-    <project path="hardware/samsung" name="Schischu/android_hardware_samsung" remote="github" revision="nougat-release" groups="pdk" />
-    <project path="hardware/samsung_slsi/exynos" name="Schischu/android_hardware_samsung_slsi_exynos" remote="github" revision="nougat-release" groups="pdk" />
-    <project path="hardware/samsung_slsi/exynos5-insignal" name="Schischu/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="nougat-release" groups="pdk" />
-    <project path="hardware/samsung_slsi/exynos5420" name="Schischu/android_hardware_samsung_slsi_exynos5420" remote="github" revision="nougat-release" groups="pdk" />
-    <project path="hardware/samsung_slsi/openmax" name="Schischu/android_hardware_samsung_slsi_openmax" remote="github" revision="nougat-release" groups="pdk" />
-    -->
-    <!-- deadman's modifications
-    <project name="exynos5420/android_hardware_samsung_slsi-cm_exynos5" path="hardware/samsung_slsi/exynos5" remote="github" revision="cm-14.1" groups="pdk"/>
-    <project name="exynos5420/android_hardware_samsung_slsi-cm_exynos5420" path="hardware/samsung_slsi/exynos5420" remote="github"  revision="cm-14.1" groups="pdk"/>
-    <project name="scubajeff/android_hardware_samsung" path="hardware/samsung" remote="github"  revision="nougat-build" groups="pdk"/>
-    <project name="LineageOS/android_hardware_samsung_slsi-cm_exynos" path="hardware/samsung_slsi/exynos" remote="github"  revision="cm-14.1" groups="pdk"/>
-    <project name="LineageOS/android_hardware_samsung_slsi-cm_openmax" path="hardware/samsung_slsi/openmax" remote="github"  revision="cm-14.1" groups="pdk"/>
-    -->
+    <project path="hardware/samsung_slsi-cm/exynos" name="LineageOS/android_hardware_samsung_slsi-cm_exynos" remote="github"  revision="cm-14.1" groups="pdk,exynos"/>
+    <project path="hardware/samsung_slsi-cm/exynos5" name="LineageOS/android_hardware_samsung_slsi-cm_exynos5" remote="github" revision="cm-14.1" groups="pdk,exynos"/>
+    <project path="hardware/samsung_slsi-cm/exynos5420" name="LineageOS/android_hardware_samsung_slsi-cm_exynos5420" remote="github"  revision="cm-14.1" groups="pdk,exynos"/>
+    <project path="hardware/samsung_slsi-cm/openmax" name="LineageOS/android_hardware_samsung_slsi-cm_openmax" remote="github"  revision="cm-14.1" groups="pdk,exynos"/>
 
     <!-- frameworks modifications -->
     <remove-project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-    <project path="frameworks/av" name="scubajeff/aosp_frameworks_av" remote="github" revision="nougat-build" groups="pdk" />
+    <project path="frameworks/av" name="scubajeff/android_frameworks_av" remote="github" revision="nougat-build" groups="pdk" />
     <remove-project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
     <project path="frameworks/base" name="scubajeff/aosp_frameworks_base" remote="github" revision="nougat-build" groups="pdk-cw-fs,pdk-fs" />
     <remove-project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
