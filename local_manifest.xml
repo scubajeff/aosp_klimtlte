@@ -100,7 +100,7 @@
     <remove-project path="bionic" name="platform/bionic" groups="pdk" />
     <project path="bionic" name="LineageOS/android_bionic" remote="github" revision="cm-14.1" groups="pdk" />
     <remove-project path="external/ipsec-tools" name="platform/external/ipsec-tools" groups="pdk" />
-    <project path="external/ipsec-tools" name="scubajeff/aosp_external_ipsec-tool" remote="github" revision="nougat-build" groups="pdk" />
+    <project path="external/ipsec-tools" name="scubajeff/aosp_external_ipsec-tools" remote="github" revision="nougat-build" groups="pdk" />
 
     <!-- Pain starts here -->
     <!-- Base on beloved Schischu's device, kernel and vendor files for klimt&chagall -->
@@ -158,6 +158,8 @@
     <project path="system/extras" name="scubajeff/aosp_system_extras" remote="github" revision="nougat-build" groups="pdk" />
     <remove-project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" />
     <project path="system/sepolicy" name="scubajeff/aosp_system_sepolicy" remote="github" revision="nougat-build" groups="pdk" />
+    <remove-project path="system/vold" name="platform/system/vold" groups="pdk" />
+    <project path="system/vold" name="scubajeff/android_system_vold" remote="github" revision="nougat-build" groups="pdk" />
 
     <remove-project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
     <project path="bootable/recovery" name="scubajeff/aosp_bootable_recovery" remote="github" revision="nougat-build" groups="pdk" />
@@ -186,8 +188,6 @@
     <!-- trash
     <remove-project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
     <project path="frameworks/opt/net/wifi" name="scubajeff/android_frameworks_opt_net_wifi" remote="github" groups="pdk" />
-    <remove-project path="system/vold" name="platform/system/vold" groups="pdk" />
-    <project path="system/vold" name="scubajeff/android_system_vold" remote="github" revision="android-7.1.1_r4" groups="pdk" />
     -->
 
 </manifest>
