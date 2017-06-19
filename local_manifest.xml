@@ -100,7 +100,7 @@
     <remove-project path="bionic" name="platform/bionic" groups="pdk" />
     <project path="bionic" name="LineageOS/android_bionic" remote="github" revision="cm-14.1" groups="pdk" />
     <remove-project path="external/ipsec-tools" name="platform/external/ipsec-tools" groups="pdk" />
-    <project path="external/ipsec-tools" name="scubajeff/aosp_external_ipsec-tools" remote="github" revision="nougat-build" groups="pdk" />
+    <project path="external/ipsec-tools" name="scubajeff/aosp_external_ipsec-tool" remote="github" revision="nougat-build" groups="pdk" />
 
     <!-- Pain starts here -->
     <!-- Base on beloved Schischu's device, kernel and vendor files for klimt&chagall -->
