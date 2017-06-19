@@ -111,11 +111,11 @@
     <project path="device/samsung/klimtlte" name="scubajeff/android_device_samsung_klimtlte" remote="github" revision="nougat-build" groups="device,klimtlte,broadcom_pdk" />
     <project path="kernel/samsung/chagalllte" name="Schischu/android_kernel_samsung_chagalllte" remote="github" revision="cm-12.1" groups="kernel,chagall_klimt" />
     <project path="kernel/samsung/klimtlte" name="LineageOS/android_kernel_samsung_exynos5420" remote="github" revision="cm-14.1" groups="kernel,chagall_klimt" />
-    <project path="vendor/samsung/chagall-klimt-common" name="scubajeff/android_vendor_samsung_chagall_klimt_common" remote="github" revision="nougat-build" />
+    <project path="vendor/samsung/chagall-klimt-common" name="scubajeff/android_vendor_samsung_chagall-klimt-common" remote="github" revision="nougat-build" />
     <project path="vendor/samsung/chagall-common" name="Schischu/android_vendor_samsung_chagall_common" remote="github" revision="nougat-release" />
     <project path="vendor/samsung/chagallwifi" name="Schischu/android_vendor_samsung_chagallwifi" remote="github" revision="nougat-release" />
     <project path="vendor/samsung/chagalllte" name="Schischu/android_vendor_samsung_chagalllte" remote="github" revision="nougat-release" />
-    <project path="vendor/samsung/klimt-common" name="Schischu/android_vendor_samsung_klimt_common" remote="github" revision="nougat-release" />
+    <project path="vendor/samsung/klimt-common" name="scubajeff/android_vendor_samsung_klimt_common" remote="github" revision="nougat-build" />
     <project path="vendor/samsung/klimtwifi" name="Schischu/android_vendor_samsung_klimtwifi" remote="github" revision="nougat-release" />
     <project path="vendor/samsung/klimtlte" name="scubajeff/android_vendor_samsung_klimtlte" remote="github" revision="nougat-build" />
     <project path="vendor/google" name="Schischu/android_vendor_google" remote="github" revision="aosp-7.0" />
